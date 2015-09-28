@@ -1,0 +1,81 @@
+%        File: cv.tex
+%     Created: mar. nov. 09 08:00  2010 C
+% Last Change: mar. nov. 09 08:00  2010 C
+%
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[T1]{fontenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+\addtolength{\textheight}{150pt} 						 % triche pour rester sur une page
+
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+
+\firstname{Laurent}
+\familyname{Hory}
+\title{Ingénieur d’étude et développement}
+\address{2 rue d'Espagne}{91300 Massy}
+\mobile{06 71 80 11 41}
+\email{laurent.hory@gmail.com}
+\extrainfo{Nationalité Française \\ Né le 24 juin 1985 -- 30 ans} % optional, remove the line if not wanted
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+
+\begin{document}
+\maketitle
+
+\section{Formation}
+\cventry{2009 -- 2011}{Master Informatique}{Université Henri Poincaré}{Nancy}{}{Spécialité Reconnaissance Apprentissage et Raisonnement.}
+\cventry{2005 -- 2009}{Licence Mathématiques \& Informatique}{Université Henri Poincaré}{Nancy}{}{Spécialité Informatique.}% arguments 3 to 6 can be left empty
+\cventry{2003 -- 2005}{BTS IRIS}{Lycée Raoul Follereau}{Belfort}{}{Informatique et Réseaux pour l'Industrie et les Services.}
+\cventry{2001 -- 2003}{Baccalauréat STI}{Lycée Lumières}{Luxeuil-les-Bains}{}{Génie électronique.}
+
+\section{Expérience}
+\cventry{Octobre 2011 \\ (4 ans)}{Ingénieur d'études}{General Electric consultant Atos}{Buc}{}{
+Développeur
+\begin{itemize}
+	\item Amélioration d'un système de gestion de texte sur un ensemble d'images médicales
+	\item Amélioration d'interface graphique java
+	\item Refactoring de code C en C++
+	\item Optimisation des performance sur du code C/C++ et sur des scripts bash, tcsh, sh
+	\item Maintenance et débogage du code existant (gdb, valgrind)
+	\item Création de script d'automatisation des taches
+	\item Développement d'un framework de tests en Python
+	\item Écriture de tests automatisés
+	\item Animation de meeting d'intégration et réalisation de la release
+\end{itemize}
+Devops
+\begin{itemize}
+	\item Support poste Linux et machine virtuelles (CentOS, VMWares/VSphere)
+	\item Maintenance d'outil de déploiement (javascript, JQuery, PHP)
+	\item Réécriture d'outil de déploiement (MongoDB, Express, AngularJS, Nodejs)
+	\item Mise en place d'intégration continue à l'aide de Jenkins
+\end{itemize}
+}
+\cventry{Mars 2011 \\ (6 mois)}{Ingénieur}{Dassault Systèmes}{Vélizy-Villacoublay}{Projet de fin d'études}{Ajout de fonctionnalités d'interactions et de comportement a un moteur physique. Utilisation de C++, lua, OpenCL, OpenGL, GLSL.}
+\cventry{Février 2010 \\ (7 mois)}{Développeur}{Loria}{Nancy}{Projet d'initiation à la recherche de 4 mois, avec prolongation d'un stage d'été de 3 mois}{Réalisation d'un logiciel de visualisation de structure de billons d'épicéa. Conception logiciel à l'aide des Design Pattern et UML. Mise en place et optimisation des algorithmes avec C++, Qt et OpenGL.}
+\cventry{Février 2009 \\ (5 mois)}{Développeur}{LCM3B}{Nancy}{Projet de validation de licence}{Réalisation d'un logiciel de visualisation moléculaire avec calcul des mailles cristallographiques. Conception de l'architecture à l'aide du langage UML, réalisation du programme avec le langage C++, le framework Qt et l'API OpenGL.}
+\cventry{Janvier 2005 \\ (6 mois)}{Développeur}{}{Belfort}{Projet de validation de BTS}{Réalisation d'un espace web et d'un logiciel de gestion de pas de tir pour un club de tir à l'arc. Utilisation des technologie PHP, Javascript, C++, MySQL.}
+\newpage
+\section{Compétences}
+\cvcomputer{\textbf{D}éveloppement:}{C, C++, Python, PHP, Java, JavaScript, SQL, Qt, XHTML/CSS, OpenGL, OpenCL, AngularJS, JQuery}{\textbf{B}ase de données:}{Oracle, Mysql, PostgreSQL, MongoDB}
+\cvcomputer{\textbf{S}ystèmes d'exploitation:}{GNU/Linux, Windows}{\textbf{L}ogiciel, IDE, Outils:}{Vim, Mercurial, Eclipse, Netbeans, Qt Creator, Emacs, Visual Studio, Subversion, OpenOffice, \LaTeX, Scilab, Gdb, Valgrind, Kcachegrind, Git, IBM Rational ClearQuest, Jira, Docker, VSphere}
+
+\section{Intérêts}
+\cvline{Loisirs:}{Jeux de société, musique rock.}
+
+\end{document}

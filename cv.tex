@@ -18,7 +18,7 @@
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
-\addtolength{\textheight}{150pt} 						 % triche pour rester sur une page
+\addtolength{\textheight}{160pt} 						 % triche pour rester sur une page
 
 \newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
 
@@ -45,26 +45,29 @@
 \cventry{2001 -- 2003}{Baccalauréat STI}{Lycée Lumières}{Luxeuil-les-Bains}{}{Génie électronique.}
 
 \section{Expérience}
+\cventry{Février 2016 \\ Aujourd'hui}{DevOps}{General Electric consultant Altran}{Buc}{}{
+Migration de l'intégration continue de Coverity 4 vers Coverity 7.
+Création d'environnements de développement sur machine virtuelle.
+Automatisation de la génération des machine de build avec Ansible.
+Conteneurisation de chaine de compilation pour une architecture en micro services reposant sur Docker et Perforce.
+}
+\cventry{Septembre 2014 \\ Octobre 2015}{DevOps}{General Electric consultant ATos}{Buc}{}{
+Support poste Linux et machine virtuelles (CentOS, VMWares/VSphere)
+Maintenance d'outil de déploiement (javascript, JQuery, PHP)
+Réécriture de l'interface de l'outil de déploiement (MongoDB, Express, AngularJS, Nodejs)
+Mise en place d'intégration continue à l'aide de Jenkins sur deux projets.
+Migration d'un projet de Clearcase vers Mercurial.
+}
 \cventry{Octobre 2011 \\ (4 ans)}{Ingénieur d'études}{General Electric consultant Atos}{Buc}{}{
-Développeur
-\begin{itemize}
-	\item Amélioration d'un système de gestion de texte sur un ensemble d'images médicales
-	\item Amélioration d'interface graphique java
-	\item Refactoring de code C en C++
-	\item Optimisation des performance sur du code C/C++ et sur des scripts bash, tcsh, sh
-	\item Maintenance et débogage du code existant (gdb, valgrind)
-	\item Création de script d'automatisation des taches
-	\item Développement d'un framework de tests en Python
-	\item Écriture de tests automatisés
-	\item Animation de meeting d'intégration et réalisation de la release
-\end{itemize}
-Devops
-\begin{itemize}
-	\item Support poste Linux et machine virtuelles (CentOS, VMWares/VSphere)
-	\item Maintenance d'outil de déploiement (javascript, JQuery, PHP)
-	\item Réécriture d'outil de déploiement (MongoDB, Express, AngularJS, Nodejs)
-	\item Mise en place d'intégration continue à l'aide de Jenkins
-\end{itemize}
+Amélioration d'un système de gestion de texte sur un ensemble d'images médicales
+Amélioration d'interface graphique java
+Refactoring de code C en C++
+Optimisation des performance sur du code C/C++ et sur des scripts bash, tcsh, sh
+Maintenance et débogage du code existant (gdb, valgrind)
+Création de script d'automatisation des taches
+Développement d'un framework de tests en Python
+Écriture de tests automatisés
+Animation de meeting d'intégration et réalisation de la release
 }
 \cventry{Mars 2011 \\ (6 mois)}{Ingénieur}{Dassault Systèmes}{Vélizy-Villacoublay}{Projet de fin d'études}{Ajout de fonctionnalités d'interactions et de comportement a un moteur physique. Utilisation de C++, lua, OpenCL, OpenGL, GLSL.}
 \cventry{Février 2010 \\ (7 mois)}{Développeur}{Loria}{Nancy}{Projet d'initiation à la recherche de 4 mois, avec prolongation d'un stage d'été de 3 mois}{Réalisation d'un logiciel de visualisation de structure de billons d'épicéa. Conception logiciel à l'aide des Design Pattern et UML. Mise en place et optimisation des algorithmes avec C++, Qt et OpenGL.}
@@ -73,7 +76,8 @@ Devops
 \newpage
 \section{Compétences}
 \cvcomputer{\textbf{D}éveloppement:}{C, C++, Python, PHP, Java, JavaScript, SQL, Qt, XHTML/CSS, OpenGL, OpenCL, AngularJS, JQuery}{\textbf{B}ase de données:}{Oracle, Mysql, PostgreSQL, MongoDB}
-\cvcomputer{\textbf{S}ystèmes d'exploitation:}{GNU/Linux, Windows}{\textbf{L}ogiciel, IDE, Outils:}{Vim, Mercurial, Eclipse, Netbeans, Qt Creator, Emacs, Visual Studio, Subversion, OpenOffice, \LaTeX, Scilab, Gdb, Valgrind, Kcachegrind, Git, IBM Rational ClearQuest, Jira, Docker, VSphere}
+\cvcomputer{\textbf{G}estion de version:}{Mercurial, Git, Subversion, Perforce, clearcase}{\textbf{S}ysteme:}{Docker, VSphere, Jenkins, Ansible, GlusterFS}
+\cvcomputer{\textbf{S}ystèmes d'exploitation:}{GNU/Linux, Windows}{\textbf{L}ogiciel, IDE, Outils:}{Vim, Eclipse, Netbeans, Qt Creator, Emacs, Visual Studio, OpenOffice, \LaTeX, Scilab, Gdb, Valgrind, Kcachegrind, IBM Rational ClearQuest, Jira}
 
 \section{Intérêts}
 \cvline{Loisirs:}{Jeux de société, musique rock.}
